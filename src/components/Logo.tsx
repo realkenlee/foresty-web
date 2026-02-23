@@ -8,32 +8,28 @@ export function Logo({ size = 32, className = "" }: { size?: number; className?:
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      {/* Three trees using caret (^) shapes - like ^^^ */}
-      {/* Left tree - smaller */}
+      {/* Three bold caret trees - much larger and more visible */}
+
+      {/* Left tree */}
       <path
-        d="M 25 65 L 30 50 L 35 65 Z"
+        d="M 15 75 L 25 35 L 35 75 Z"
         fill="currentColor"
-        opacity="0.6"
+        opacity="0.7"
       />
 
-      {/* Center tree - tallest */}
+      {/* Center tree - tallest and most prominent */}
       <path
-        d="M 42 70 L 50 45 L 58 70 Z"
+        d="M 40 80 L 50 25 L 60 80 Z"
         fill="currentColor"
-        opacity="0.9"
+        opacity="1"
       />
 
-      {/* Right tree - smaller */}
+      {/* Right tree */}
       <path
-        d="M 65 65 L 70 50 L 75 65 Z"
+        d="M 65 75 L 75 35 L 85 75 Z"
         fill="currentColor"
-        opacity="0.6"
+        opacity="0.7"
       />
-
-      {/* Small dots at base - like periods */}
-      <circle cx="30" cy="75" r="1.5" fill="currentColor" opacity="0.4" />
-      <circle cx="50" cy="75" r="1.5" fill="currentColor" opacity="0.4" />
-      <circle cx="70" cy="75" r="1.5" fill="currentColor" opacity="0.4" />
     </svg>
   );
 }

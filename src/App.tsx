@@ -16,7 +16,7 @@ function App() {
         <header className="fixed top-0 w-full bg-white/80 backdrop-blur-xl border-b border-slate-200 z-50">
           <div className="max-w-7xl mx-auto px-6 lg:px-8 py-5 flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <Logo size={32} className="text-slate-700" />
+              <Logo size={40} className="text-slate-700" />
               <span className="text-xl font-semibold text-slate-900">Foresty</span>
             </div>
           </div>
@@ -196,7 +196,7 @@ function App() {
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <div className="flex items-center gap-3">
-                <Logo size={28} className="text-slate-700" />
+                <Logo size={36} className="text-slate-700" />
                 <span className="font-semibold text-lg text-slate-900">Foresty</span>
               </div>
               <p className="text-sm text-slate-500">
