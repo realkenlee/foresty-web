@@ -8,31 +8,32 @@ export function Logo({ size = 32, className = "" }: { size?: number; className?:
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      {/* Hand-drawn ^ - thin on left, bold on right */}
+      {/* Bold ^ with dramatic thin-to-thick left-to-right */}
 
-      {/* Left stroke - starts thin at bottom-left, gets bolder toward peak */}
+      {/* Left stroke - very thin at left, very bold at center */}
       <path
-        d="M 20 82
-           L 22 80
-           Q 30 65, 38 48
-           Q 44 32, 50 18
-           L 54 20
-           Q 48 35, 42 50
-           Q 34 68, 26 82
+        d="M 18 85
+           L 20 83
+           Q 28 68, 36 50
+           Q 42 35, 48 22
+           L 50 18
+           L 58 24
+           Q 52 38, 46 52
+           Q 38 70, 28 84
            Z"
         fill="currentColor"
       />
 
-      {/* Right stroke - starts bold at peak, ends bold at bottom-right */}
+      {/* Right stroke - very bold at center, very bold at right */}
       <path
-        d="M 46 20
+        d="M 42 24
            L 50 18
-           Q 56 32, 62 48
-           Q 70 65, 78 80
-           L 80 82
-           L 74 82
-           Q 66 68, 58 50
-           Q 52 35, 46 20
+           Q 56 35, 64 50
+           Q 72 68, 80 83
+           L 82 85
+           L 72 84
+           Q 62 70, 54 52
+           Q 48 38, 42 24
            Z"
         fill="currentColor"
       />
