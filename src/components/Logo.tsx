@@ -8,18 +8,25 @@ export function Logo({ size = 32, className = "" }: { size?: number; className?:
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      {/* Radial burst pattern - playful like Claude's asterisk */}
-      <g transform="translate(50, 50)">
-        {/* 8 lines radiating out at different angles */}
-        <path d="M 0 -25 L 0 -12" stroke="currentColor" strokeWidth="5" strokeLinecap="round" />
-        <path d="M 18 -18 L 9 -9" stroke="currentColor" strokeWidth="5" strokeLinecap="round" />
-        <path d="M 25 0 L 12 0" stroke="currentColor" strokeWidth="5" strokeLinecap="round" />
-        <path d="M 18 18 L 9 9" stroke="currentColor" strokeWidth="5" strokeLinecap="round" />
-        <path d="M 0 25 L 0 12" stroke="currentColor" strokeWidth="5" strokeLinecap="round" />
-        <path d="M -18 18 L -9 9" stroke="currentColor" strokeWidth="5" strokeLinecap="round" />
-        <path d="M -25 0 L -12 0" stroke="currentColor" strokeWidth="5" strokeLinecap="round" />
-        <path d="M -18 -18 L -9 -9" stroke="currentColor" strokeWidth="5" strokeLinecap="round" />
-      </g>
+      {/* Playful ^ with organic curves - hand-drawn feel */}
+      {/* Left stroke with slight curve */}
+      <path
+        d="M 22 75 Q 35 50, 50 22"
+        stroke="currentColor"
+        strokeWidth="7"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      />
+      {/* Right stroke with slight curve */}
+      <path
+        d="M 50 22 Q 65 50, 78 75"
+        stroke="currentColor"
+        strokeWidth="7"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      />
     </svg>
   );
 }
