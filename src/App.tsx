@@ -41,100 +41,130 @@ function App() {
           </div>
         </section>
 
-        {/* Featured App Section */}
+        {/* Our Apps Section */}
         <section className="py-32 px-6 lg:px-8 relative">
           {/* Subtle grid pattern */}
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#8882_1px,transparent_1px),linear-gradient(to_bottom,#8882_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
 
           <div className="max-w-7xl mx-auto relative">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 border border-slate-200 mb-8">
-              <div className="w-2 h-2 bg-slate-400 rounded-full"></div>
-              <span className="text-sm font-medium text-slate-700">Featured App</span>
+            <div className="mb-16">
+              <h2 className="text-5xl font-bold tracking-tight mb-4 text-slate-900">
+                Our Apps
+              </h2>
+              <p className="text-xl text-slate-600 max-w-3xl">
+                Quality software built with attention to detail and user experience.
+              </p>
             </div>
 
-            <h2 className="text-6xl font-bold tracking-tight mb-6 text-slate-900">
-              Line and Stone
-            </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mb-20 leading-relaxed">
-              A strategic tile-drafting game where players compete to complete beautiful
-              mosaic patterns. Draft colored materials, fill your blueprint grid, and
-              outscore your opponents.
-            </p>
+            {/* Line and Stone App Card */}
+            <div className="mb-12">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 border border-slate-200 mb-6">
+                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                <span className="text-sm font-medium text-slate-700">Available Now</span>
+              </div>
 
-            {/* Screenshots */}
-            <div className="grid lg:grid-cols-2 gap-8 mb-20">
-              <div className="group relative">
-                <div className="absolute -inset-1 bg-gradient-to-r from-slate-200 to-slate-300 rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
-                <div className="relative bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-                  <img
-                    src="/screenshots/menu_screenshot.png"
-                    alt="Line and Stone Menu"
-                    className="w-full h-auto transition-transform duration-700 group-hover:scale-[1.02]"
-                  />
+              <h3 className="text-4xl font-bold tracking-tight mb-4 text-slate-900">
+                Line and Stone
+              </h3>
+              <p className="text-lg text-slate-600 max-w-3xl mb-12 leading-relaxed">
+                A strategic tile-drafting game where players compete to complete beautiful
+                mosaic patterns. Draft colored materials, fill your blueprint grid, and
+                outscore your opponents.
+              </p>
+
+              {/* Screenshots */}
+              <div className="grid lg:grid-cols-2 gap-8 mb-12">
+                <div className="group relative">
+                  <div className="absolute -inset-1 bg-gradient-to-r from-slate-200 to-slate-300 rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                  <div className="relative bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+                    <img
+                      src="/screenshots/menu_screenshot.png"
+                      alt="Line and Stone Menu"
+                      className="w-full h-auto transition-transform duration-700 group-hover:scale-[1.02]"
+                    />
+                  </div>
+                </div>
+                <div className="group relative">
+                  <div className="absolute -inset-1 bg-gradient-to-r from-slate-200 to-slate-300 rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                  <div className="relative bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+                    <img
+                      src="/screenshots/game_screenshot.png"
+                      alt="Line and Stone Gameplay"
+                      className="w-full h-auto transition-transform duration-700 group-hover:scale-[1.02]"
+                    />
+                  </div>
                 </div>
               </div>
-              <div className="group relative">
-                <div className="absolute -inset-1 bg-gradient-to-r from-slate-200 to-slate-300 rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
-                <div className="relative bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-                  <img
-                    src="/screenshots/game_screenshot.png"
-                    alt="Line and Stone Gameplay"
-                    className="w-full h-auto transition-transform duration-700 group-hover:scale-[1.02]"
-                  />
+
+              {/* Features */}
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
+                <div className="group relative bg-white rounded-2xl p-8 border border-slate-200 hover:border-slate-300 transition-all duration-300 hover:shadow-md">
+                  <div className="w-14 h-14 bg-slate-100 rounded-xl mb-6 flex items-center justify-center group-hover:bg-slate-200 transition-colors duration-300">
+                    <svg className="w-7 h-7 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                  </div>
+                  <h4 className="text-lg font-semibold mb-3 text-slate-900">Strategic gameplay</h4>
+                  <p className="text-slate-600 leading-relaxed">
+                    Plan your moves carefully to maximize scoring opportunities and complete your mosaic grid.
+                  </p>
+                </div>
+
+                <div className="group relative bg-white rounded-2xl p-8 border border-slate-200 hover:border-slate-300 transition-all duration-300 hover:shadow-md">
+                  <div className="w-14 h-14 bg-slate-100 rounded-xl mb-6 flex items-center justify-center group-hover:bg-slate-200 transition-colors duration-300">
+                    <svg className="w-7 h-7 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                    </svg>
+                  </div>
+                  <h4 className="text-lg font-semibold mb-3 text-slate-900">Beautiful design</h4>
+                  <p className="text-slate-600 leading-relaxed">
+                    Artisan-inspired visuals with handcrafted aesthetics and multiple theme options.
+                  </p>
+                </div>
+
+                <div className="group relative bg-white rounded-2xl p-8 border border-slate-200 hover:border-slate-300 transition-all duration-300 hover:shadow-md">
+                  <div className="w-14 h-14 bg-slate-100 rounded-xl mb-6 flex items-center justify-center group-hover:bg-slate-200 transition-colors duration-300">
+                    <svg className="w-7 h-7 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <h4 className="text-lg font-semibold mb-3 text-slate-900">AI opponents</h4>
+                  <p className="text-slate-600 leading-relaxed">
+                    Challenge yourself against intelligent AI with multiple difficulty levels.
+                  </p>
+                </div>
+              </div>
+
+              {/* Platform badges */}
+              <div className="flex items-center gap-4">
+                <span className="text-sm font-medium text-slate-600">Available on</span>
+                <div className="flex gap-3">
+                  <span className="inline-flex items-center px-6 py-2.5 rounded-full text-sm font-medium bg-slate-900 text-white hover:bg-slate-800 transition-colors">
+                    iOS
+                  </span>
+                  <span className="inline-flex items-center px-6 py-2.5 rounded-full text-sm font-medium bg-slate-900 text-white hover:bg-slate-800 transition-colors">
+                    Web
+                  </span>
                 </div>
               </div>
             </div>
 
-            {/* Features */}
-            <div className="grid md:grid-cols-3 gap-6 mb-16">
-              <div className="group relative bg-white rounded-2xl p-8 border border-slate-200 hover:border-slate-300 transition-all duration-300 hover:shadow-md">
-                <div className="w-14 h-14 bg-slate-100 rounded-xl mb-6 flex items-center justify-center group-hover:bg-slate-200 transition-colors duration-300">
-                  <svg className="w-7 h-7 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            {/* More to Come Section */}
+            <div className="mt-32 pt-16 border-t border-slate-200">
+              <div className="text-center max-w-2xl mx-auto">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200 mb-6">
+                  <svg className="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                   </svg>
+                  <span className="text-sm font-medium text-slate-600">Coming Soon</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-slate-900">Strategic gameplay</h3>
-                <p className="text-slate-600 leading-relaxed">
-                  Plan your moves carefully to maximize scoring opportunities and complete your mosaic grid.
+                <h3 className="text-3xl font-bold tracking-tight mb-4 text-slate-900">
+                  More to come
+                </h3>
+                <p className="text-lg text-slate-600 leading-relaxed">
+                  We're working on new applications that continue our mission of creating thoughtful,
+                  well-crafted software. Stay tuned for updates.
                 </p>
-              </div>
-
-              <div className="group relative bg-white rounded-2xl p-8 border border-slate-200 hover:border-slate-300 transition-all duration-300 hover:shadow-md">
-                <div className="w-14 h-14 bg-slate-100 rounded-xl mb-6 flex items-center justify-center group-hover:bg-slate-200 transition-colors duration-300">
-                  <svg className="w-7 h-7 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-slate-900">Beautiful design</h3>
-                <p className="text-slate-600 leading-relaxed">
-                  Artisan-inspired visuals with handcrafted aesthetics and multiple theme options.
-                </p>
-              </div>
-
-              <div className="group relative bg-white rounded-2xl p-8 border border-slate-200 hover:border-slate-300 transition-all duration-300 hover:shadow-md">
-                <div className="w-14 h-14 bg-slate-100 rounded-xl mb-6 flex items-center justify-center group-hover:bg-slate-200 transition-colors duration-300">
-                  <svg className="w-7 h-7 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-slate-900">AI opponents</h3>
-                <p className="text-slate-600 leading-relaxed">
-                  Challenge yourself against intelligent AI with multiple difficulty levels.
-                </p>
-              </div>
-            </div>
-
-            {/* Platform badges */}
-            <div className="flex items-center gap-4">
-              <span className="text-sm font-medium text-slate-600">Available on</span>
-              <div className="flex gap-3">
-                <span className="inline-flex items-center px-6 py-2.5 rounded-full text-sm font-medium bg-slate-900 text-white hover:bg-slate-800 transition-colors">
-                  iOS
-                </span>
-                <span className="inline-flex items-center px-6 py-2.5 rounded-full text-sm font-medium bg-slate-900 text-white hover:bg-slate-800 transition-colors">
-                  Web
-                </span>
               </div>
             </div>
           </div>
