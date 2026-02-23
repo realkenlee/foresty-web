@@ -8,46 +8,32 @@ export function Logo({ size = 32, className = "" }: { size?: number; className?:
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      {/* Wabi-sabi inspired organic circle with intentional imperfection */}
+      {/* Three trees using caret (^) shapes - like ^^^ */}
+      {/* Left tree - smaller */}
       <path
-        d="M 50 10
-           C 70 12, 88 28, 90 50
-           C 88 72, 70 88, 50 90
-           C 30 88, 12 72, 10 50
-           C 12 28, 30 12, 50 10"
-        stroke="currentColor"
-        strokeWidth="3"
-        strokeLinecap="round"
-        fill="none"
+        d="M 25 65 L 30 50 L 35 65 Z"
+        fill="currentColor"
+        opacity="0.6"
+      />
+
+      {/* Center tree - tallest */}
+      <path
+        d="M 42 70 L 50 45 L 58 70 Z"
+        fill="currentColor"
         opacity="0.9"
       />
 
-      {/* Inner organic shapes suggesting growth/forest */}
+      {/* Right tree - smaller */}
       <path
-        d="M 50 35 L 50 65"
-        stroke="currentColor"
-        strokeWidth="2.5"
-        strokeLinecap="round"
-        opacity="0.8"
-      />
-      <path
-        d="M 42 45 L 50 35 L 58 45"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-        opacity="0.7"
-      />
-      <path
-        d="M 38 55 L 50 42 L 62 55"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
+        d="M 65 65 L 70 50 L 75 65 Z"
+        fill="currentColor"
         opacity="0.6"
       />
+
+      {/* Small dots at base - like periods */}
+      <circle cx="30" cy="75" r="1.5" fill="currentColor" opacity="0.4" />
+      <circle cx="50" cy="75" r="1.5" fill="currentColor" opacity="0.4" />
+      <circle cx="70" cy="75" r="1.5" fill="currentColor" opacity="0.4" />
     </svg>
   );
 }
