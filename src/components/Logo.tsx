@@ -8,30 +8,36 @@ export function Logo({ size = 32, className = "" }: { size?: number; className?:
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      {/* Extra bold hand-drawn ^ with varying width */}
+      {/* Hand-drawn ^ with organic width variation */}
 
-      {/* Left stroke - much bolder */}
+      {/* Left stroke - width varies along the stroke */}
       <path
-        d="M 18 82
-           Q 15 80, 28 55
-           Q 35 40, 44 24
+        d="M 15 82
+           Q 18 75, 25 60
+           Q 30 50, 38 35
+           Q 42 28, 48 20
            L 50 18
-           L 56 22
-           Q 50 35, 44 48
-           Q 35 65, 26 80
+           L 52 20
+           Q 48 26, 45 32
+           Q 40 42, 36 52
+           Q 30 65, 24 78
+           Q 20 82, 15 82
            Z"
         fill="currentColor"
       />
 
-      {/* Right stroke - much bolder */}
+      {/* Right stroke - width varies along the stroke */}
       <path
-        d="M 82 82
-           Q 85 80, 72 55
-           Q 65 40, 56 24
+        d="M 85 82
+           Q 82 75, 75 60
+           Q 70 50, 62 35
+           Q 58 28, 52 20
            L 50 18
-           L 44 22
-           Q 50 35, 56 48
-           Q 65 65, 74 80
+           L 48 20
+           Q 52 26, 55 32
+           Q 60 42, 64 52
+           Q 70 65, 76 78
+           Q 80 82, 85 82
            Z"
         fill="currentColor"
       />
