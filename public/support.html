@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    <title>Support — Foresty</title>
+    <meta name="description" content="Get help with Foresty's apps, including Line and Stone. Contact us by email." />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <style>
+      :root {
+        --bg: #ffffff;
+        --bg-soft: #f8fafc;
+        --border: #e2e8f0;
+        --text: #0f172a;
+        --muted: #475569;
+        --muted-2: #64748b;
+        --link: #0f172a;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; }
+      body {
+        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: saturate(180%) blur(12px);
+        border-bottom: 1px solid var(--border);
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 0;
+        max-width: 1200px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: var(--text);
+      }
+      .brand-name { font-weight: 600; font-size: 1.125rem; }
+      main { padding: 64px 0 96px; }
+      h1 {
+        font-size: 2.5rem;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        margin: 0 0 8px;
+      }
+      h2 {
+        font-size: 1.375rem;
+        letter-spacing: -0.01em;
+        margin: 40px 0 12px;
+      }
+      .lede {
+        color: var(--muted-2);
+        font-size: 1.05rem;
+        margin-bottom: 16px;
+      }
+      p, li { color: var(--muted); }
+      ul { padding-left: 20px; }
+      li { margin-bottom: 6px; }
+      a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+      a:hover { opacity: 0.75; }
+      .contact-card {
+        background: var(--bg-soft);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 20px 24px;
+        margin: 24px 0 32px;
+      }
+      .contact-card .email {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 1.05rem;
+        margin-top: 4px;
+      }
+      .faq dt {
+        font-weight: 600;
+        color: var(--text);
+        margin-top: 24px;
+      }
+      .faq dd {
+        margin: 6px 0 0;
+        color: var(--muted);
+      }
+      footer {
+        border-top: 1px solid var(--border);
+        padding: 32px 0;
+        color: var(--muted-2);
+        font-size: 0.9rem;
+      }
+      footer .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .logo-dot {
+        width: 28px;
+        height: 28px;
+        border-radius: 6px;
+        background: linear-gradient(135deg, #334155, #64748b);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container" style="max-width: 1200px;">
+        <nav class="nav">
+          <a class="brand" href="/">
+            <span class="logo-dot" aria-hidden="true"></span>
+            <span class="brand-name">Foresty</span>
+          </a>
+          <a href="/" style="font-size: 0.95rem;">Back to home</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Support</h1>
+        <p class="lede">
+          We're a small team and we read every message. If something isn't
+          working, or you have a question about one of our apps, we'd like
+          to hear from you.
+        </p>
+
+        <div class="contact-card">
+          <div>Email us at</div>
+          <a class="email" href="mailto:hello@foresty.dev">hello@foresty.dev</a>
+          <p style="margin: 12px 0 0;">
+            We typically reply within a few business days.
+          </p>
+        </div>
+
+        <h2>Line and Stone</h2>
+        <dl class="faq">
+          <dt>The game doesn't remember my settings</dt>
+          <dd>
+            Line and Stone stores preferences locally on your device. If
+            they've been reset, it usually means the app was reinstalled or
+            device storage was cleared. Reopen Settings in the app to set
+            your preferences again.
+          </dd>
+
+          <dt>My Game Center name isn't showing</dt>
+          <dd>
+            Make sure you're signed in to Game Center in iOS Settings →
+            Game Center, and that Game Center is enabled for Line and
+            Stone. The app only reads your display name; no other data is
+            collected or sent to us.
+          </dd>
+
+          <dt>I want to delete my data</dt>
+          <dd>
+            All data the app stores is local to your device. Deleting Line
+            and Stone from your device removes its stored preferences.
+            We don't have servers that hold any personal information about
+            you.
+          </dd>
+
+          <dt>I found a bug or have a feature request</dt>
+          <dd>
+            Please email us with as much detail as you can — what device
+            and iOS version you're using, what you were doing when it
+            happened, and a screenshot if possible.
+          </dd>
+        </dl>
+
+        <h2>Other questions</h2>
+        <p>
+          For anything else — partnership questions, press, or general
+          feedback about Foresty — use the same email address and we'll
+          route your message internally.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div>© 2026 Foresty. All rights reserved.</div>
+        <div>
+          <a href="/privacy" style="margin-right: 16px;">Privacy</a>
+          <a href="/">foresty.dev</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

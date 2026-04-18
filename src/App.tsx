@@ -206,6 +206,12 @@ function App() {
                 >
                   Privacy
                 </a>
+                <a
+                  href="/support"
+                  className="text-sm text-slate-500 hover:text-slate-700 transition-colors"
+                >
+                  Support
+                </a>
                 <p className="text-sm text-slate-500">
                   © {new Date().getFullYear()} Foresty. All rights reserved.
                 </p>
