@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    <title>Privacy Policy — Foresty</title>
+    <meta name="description" content="Privacy Policy for Foresty and its apps, including Line and Stone." />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <style>
+      :root {
+        --bg: #ffffff;
+        --bg-soft: #f8fafc;
+        --border: #e2e8f0;
+        --text: #0f172a;
+        --muted: #475569;
+        --muted-2: #64748b;
+        --link: #0f172a;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; }
+      body {
+        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: saturate(180%) blur(12px);
+        border-bottom: 1px solid var(--border);
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 0;
+        max-width: 1200px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: var(--text);
+      }
+      .brand-name { font-weight: 600; font-size: 1.125rem; }
+      main { padding: 64px 0 96px; }
+      h1 {
+        font-size: 2.5rem;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        margin: 0 0 8px;
+      }
+      h2 {
+        font-size: 1.375rem;
+        letter-spacing: -0.01em;
+        margin: 40px 0 12px;
+      }
+      .effective {
+        color: var(--muted-2);
+        font-size: 0.95rem;
+        margin-bottom: 32px;
+      }
+      p, li { color: var(--muted); }
+      ul { padding-left: 20px; }
+      li { margin-bottom: 6px; }
+      a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+      a:hover { opacity: 0.75; }
+      .callout {
+        background: var(--bg-soft);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 16px 20px;
+        margin: 24px 0;
+      }
+      footer {
+        border-top: 1px solid var(--border);
+        padding: 32px 0;
+        color: var(--muted-2);
+        font-size: 0.9rem;
+      }
+      footer .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .logo-dot {
+        width: 28px;
+        height: 28px;
+        border-radius: 6px;
+        background: linear-gradient(135deg, #334155, #64748b);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container" style="max-width: 1200px;">
+        <nav class="nav">
+          <a class="brand" href="/">
+            <span class="logo-dot" aria-hidden="true"></span>
+            <span class="brand-name">Foresty</span>
+          </a>
+          <a href="/" style="font-size: 0.95rem;">Back to home</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="effective">Effective 18 April 2026</p>
+
+        <p>
+          Foresty ("we", "us") builds small, thoughtful apps. This policy
+          describes how our apps and website handle information. It applies to
+          the Foresty website at foresty.dev and to our apps, including
+          <strong>Line and Stone</strong>.
+        </p>
+
+        <div class="callout">
+          <strong>Short version:</strong> Line and Stone does not collect or
+          transmit personal information to Foresty. The app runs entirely on
+          your device. If you choose to sign in with Game Center, that's handled
+          by Apple under Apple's own privacy policy — we don't receive any data
+          from it.
+        </div>
+
+        <h2>Information we collect</h2>
+        <p>
+          We do not operate servers that receive personal information from our
+          apps. Specifically, <strong>Line and Stone</strong> does not:
+        </p>
+        <ul>
+          <li>Ask you to create an account, sign in with email, or provide a password</li>
+          <li>Collect analytics, crash reports, or usage telemetry</li>
+          <li>Include third-party advertising or tracking SDKs</li>
+          <li>Send your gameplay, preferences, or device identifiers off your device</li>
+          <li>Offer in-app purchases or subscriptions</li>
+        </ul>
+
+        <h2>Data stored on your device</h2>
+        <p>
+          Line and Stone stores a few preferences locally on your device using
+          iOS system storage (UserDefaults). This includes your chosen player
+          name, sound and haptics preferences, preferred AI difficulty, and
+          similar settings. This data stays on your device and is removed when
+          you delete the app.
+        </p>
+
+        <h2>Game Center</h2>
+        <p>
+          Line and Stone can optionally use Apple's Game Center. If Game Center
+          is enabled on your device, the app may read your Game Center display
+          name so it can greet you by name in the game. Game Center
+          authentication and data is managed entirely by Apple under
+          <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.
+          We do not receive, store, or share Game Center information.
+        </p>
+
+        <h2>The foresty.dev website</h2>
+        <p>
+          The Foresty website is a simple static site hosted on Vercel. Vercel
+          may record standard request logs (such as IP address and user agent)
+          for the purpose of operating the site and protecting it from abuse.
+          We do not run analytics or advertising on the site.
+        </p>
+
+        <h2>Children's privacy</h2>
+        <p>
+          Our apps are suitable for general audiences. Because Line and Stone
+          does not collect personal information, we do not knowingly collect
+          information from children under 13. If you have questions about
+          children's use of our apps, please contact us.
+        </p>
+
+        <h2>Data sharing</h2>
+        <p>
+          We do not sell, rent, or share personal information with third
+          parties, because we do not collect any.
+        </p>
+
+        <h2>Your rights</h2>
+        <p>
+          Because we do not hold personal information about you, there is
+          nothing for us to access, correct, or delete on your behalf. Any
+          data stored locally by the app can be removed by deleting the app
+          from your device. Game Center data is controlled through your Apple
+          ID and iOS settings.
+        </p>
+
+        <h2>Changes to this policy</h2>
+        <p>
+          If we update this policy, we'll change the effective date above. If
+          the changes are significant, we'll note them on this page.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          Questions about this policy? Email us at
+          <a href="mailto:hello@foresty.dev">hello@foresty.dev</a>.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div>© 2026 Foresty. All rights reserved.</div>
+        <div>
+          <a href="/support" style="margin-right: 16px;">Support</a>
+          <a href="/">foresty.dev</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

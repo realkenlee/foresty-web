@@ -199,9 +199,23 @@ function App() {
                 <Logo size={36} className="text-slate-700" />
                 <span className="font-semibold text-lg text-slate-900">Foresty</span>
               </div>
-              <p className="text-sm text-slate-500">
-                © {new Date().getFullYear()} Foresty. All rights reserved.
-              </p>
+              <div className="flex items-center gap-6">
+                <a
+                  href="/privacy"
+                  className="text-sm text-slate-500 hover:text-slate-700 transition-colors"
+                >
+                  Privacy
+                </a>
+                <a
+                  href="/support"
+                  className="text-sm text-slate-500 hover:text-slate-700 transition-colors"
+                >
+                  Support
+                </a>
+                <p className="text-sm text-slate-500">
+                  © {new Date().getFullYear()} Foresty. All rights reserved.
+                </p>
+              </div>
             </div>
           </div>
         </footer>
