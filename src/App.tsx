@@ -14,7 +14,7 @@ function App() {
       <div className="relative z-10">
         {/* Header */}
         <header className="fixed top-0 w-full bg-white/80 backdrop-blur-xl border-b border-slate-200 z-50">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8 py-5 flex items-center justify-between">
+          <div className="max-w-3xl mx-auto px-6 lg:px-8 py-5 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <Logo size={40} className="text-slate-700" />
               <span className="text-xl font-semibold text-slate-900">Foresty</span>
@@ -22,136 +22,27 @@ function App() {
           </div>
         </header>
 
-        {/* Hero Section */}
-        <section className="pt-40 pb-32 px-6 lg:px-8 relative">
-          <div className="max-w-7xl mx-auto">
-            <div className="max-w-5xl mx-auto text-center">
-              <div className="relative">
-                <h1 className="text-7xl lg:text-8xl font-bold tracking-tight mb-8 leading-tight">
-                  <span className="bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900 bg-clip-text text-transparent">
-                    Software crafted
-                  </span>
-                  <br />
-                  <span className="text-slate-900">with care</span>
-                </h1>
-                <p className="text-xl lg:text-2xl text-slate-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-                  Thoughtful apps — games and tools — made with care.
-                </p>
-              </div>
-            </div>
+        {/* Hero */}
+        <section className="pt-32 pb-12 px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto">
+            <h1 className="text-4xl lg:text-5xl font-bold tracking-tight mb-3 text-slate-900">
+              Games and tools
+            </h1>
+            <p className="text-lg text-slate-600 leading-relaxed">
+              Two iOS apps from Foresty: a pocket typewriter and a tile-drafting game.
+            </p>
           </div>
         </section>
 
-        {/* Our Apps Section */}
-        <section className="py-32 px-6 lg:px-8 relative">
-          {/* Subtle grid pattern */}
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#8882_1px,transparent_1px),linear-gradient(to_bottom,#8882_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+        {/* Our Apps */}
+        <section className="pb-20 px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl font-bold tracking-tight mb-8 text-slate-900">
+              Our Apps
+            </h2>
 
-          <div className="max-w-7xl mx-auto relative">
-            <div className="mb-16">
-              <h2 className="text-5xl font-bold tracking-tight mb-4 text-slate-900">
-                Our Apps
-              </h2>
-              <p className="text-xl text-slate-600 max-w-3xl">
-                Quality software built with attention to detail and user experience.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 gap-8">
-              {/* Line and Stone */}
-              <article className="bg-white rounded-2xl border border-slate-200 p-8 lg:p-10">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 border border-slate-200 mb-6">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span className="text-sm font-medium text-slate-700">Available Now</span>
-                </div>
-
-                <h3 className="text-4xl font-bold tracking-tight mb-4 text-slate-900">
-                  Line and Stone
-                </h3>
-                <p className="text-lg text-slate-600 max-w-3xl mb-8 leading-relaxed">
-                  A strategic tile-drafting game where players compete to complete beautiful
-                  mosaic patterns. Draft colored materials, fill your blueprint grid, and
-                  outscore your opponents.
-                </p>
-
-                {/* Screenshots */}
-                <div className="grid lg:grid-cols-2 gap-8 mb-8">
-                  <div className="group relative">
-                    <div className="absolute -inset-1 bg-gradient-to-r from-slate-200 to-slate-300 rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
-                    <div className="relative bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-                      <img
-                        src="/screenshots/menu_screenshot.png"
-                        alt="Line and Stone Menu"
-                        className="w-full h-auto transition-transform duration-700 group-hover:scale-[1.02]"
-                      />
-                    </div>
-                  </div>
-                  <div className="group relative">
-                    <div className="absolute -inset-1 bg-gradient-to-r from-slate-200 to-slate-300 rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
-                    <div className="relative bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-                      <img
-                        src="/screenshots/game_screenshot.png"
-                        alt="Line and Stone Gameplay"
-                        className="w-full h-auto transition-transform duration-700 group-hover:scale-[1.02]"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                {/* Features */}
-                <div className="grid md:grid-cols-3 gap-6 mb-8">
-                  <div className="group relative bg-white rounded-2xl p-8 border border-slate-200 hover:border-slate-300 transition-all duration-300 hover:shadow-md">
-                    <div className="w-14 h-14 bg-slate-100 rounded-xl mb-6 flex items-center justify-center group-hover:bg-slate-200 transition-colors duration-300">
-                      <svg className="w-7 h-7 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                      </svg>
-                    </div>
-                    <h4 className="text-lg font-semibold mb-3 text-slate-900">Strategic gameplay</h4>
-                    <p className="text-slate-600 leading-relaxed">
-                      Plan your moves carefully to maximize scoring opportunities and complete your mosaic grid.
-                    </p>
-                  </div>
-
-                  <div className="group relative bg-white rounded-2xl p-8 border border-slate-200 hover:border-slate-300 transition-all duration-300 hover:shadow-md">
-                    <div className="w-14 h-14 bg-slate-100 rounded-xl mb-6 flex items-center justify-center group-hover:bg-slate-200 transition-colors duration-300">
-                      <svg className="w-7 h-7 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
-                      </svg>
-                    </div>
-                    <h4 className="text-lg font-semibold mb-3 text-slate-900">Beautiful design</h4>
-                    <p className="text-slate-600 leading-relaxed">
-                      Artisan-inspired visuals with handcrafted aesthetics and multiple theme options.
-                    </p>
-                  </div>
-
-                  <div className="group relative bg-white rounded-2xl p-8 border border-slate-200 hover:border-slate-300 transition-all duration-300 hover:shadow-md">
-                    <div className="w-14 h-14 bg-slate-100 rounded-xl mb-6 flex items-center justify-center group-hover:bg-slate-200 transition-colors duration-300">
-                      <svg className="w-7 h-7 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                      </svg>
-                    </div>
-                    <h4 className="text-lg font-semibold mb-3 text-slate-900">AI opponents</h4>
-                    <p className="text-slate-600 leading-relaxed">
-                      Challenge yourself against intelligent AI with multiple difficulty levels.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Platform badges */}
-                <div className="flex items-center gap-4">
-                  <span className="text-sm font-medium text-slate-600">Available on</span>
-                  <div className="flex gap-3">
-                    <span className="inline-flex items-center px-6 py-2.5 rounded-full text-sm font-medium bg-slate-900 text-white">
-                      iOS
-                    </span>
-                    <span className="inline-flex items-center px-6 py-2.5 rounded-full text-sm font-medium bg-slate-900 text-white">
-                      Web
-                    </span>
-                  </div>
-                </div>
-              </article>
-
-              {/* Platn */}
+            <div className="grid grid-cols-1 gap-6">
+              {/* Platn — launch priority */}
               <article className="bg-white rounded-2xl border border-slate-200 p-8 lg:p-10">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200 mb-6">
                   <span className="text-sm font-medium text-slate-600">Coming Soon</span>
@@ -164,45 +55,63 @@ function App() {
                   Local pocket typewriter. No account. No sync. No subscription.
                 </p>
 
-                <div className="flex items-center gap-4">
-                  <span className="text-sm font-medium text-slate-600">Available on</span>
-                  <div className="flex gap-3">
-                    <span className="inline-flex items-center px-6 py-2.5 rounded-full text-sm font-medium bg-slate-900 text-white">
-                      iOS
-                    </span>
+                <div className="flex flex-wrap items-center gap-4">
+                  <a
+                    href="/platn"
+                    className="inline-flex items-center px-6 py-2.5 rounded-full text-sm font-medium bg-slate-900 text-white hover:bg-slate-800 transition-colors"
+                  >
+                    Learn more
+                  </a>
+                  <span className="text-sm text-slate-500">iOS</span>
+                </div>
+              </article>
+
+              {/* Line and Stone — compressed peer */}
+              <article className="bg-white rounded-2xl border border-slate-200 p-8 lg:p-10">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200 mb-6">
+                  <span className="text-sm font-medium text-slate-600">Available Now</span>
+                </div>
+
+                <h3 className="text-4xl font-bold tracking-tight mb-4 text-slate-900">
+                  Line and Stone
+                </h3>
+                <div className="flex flex-col sm:flex-row sm:items-start gap-6">
+                  <div className="flex-1 min-w-0">
+                    <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                      A strategic tile-drafting game. Draft materials, fill your blueprint, and outscore your opponents.
+                    </p>
+                    <a
+                      href="https://apps.apple.com/us/app/line-and-stone/id6758897625"
+                      className="inline-flex items-center px-6 py-2.5 rounded-full text-sm font-medium bg-slate-900 text-white hover:bg-slate-800 transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      App Store
+                    </a>
                   </div>
+                  <img
+                    src="/screenshots/menu_screenshot.png"
+                    alt="Line and Stone"
+                    className="w-28 rounded-xl border border-slate-200 shrink-0"
+                  />
                 </div>
               </article>
             </div>
           </div>
         </section>
 
-        {/* About Section */}
-        <section className="py-32 px-6 lg:px-8 bg-slate-50 relative">
-          <div className="max-w-7xl mx-auto relative">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-5xl font-bold tracking-tight mb-8 text-slate-900">
-                Built for quality
-              </h2>
-              <p className="text-xl text-slate-600 leading-relaxed mb-6">
-                Foresty is a software development organization dedicated to creating
-                applications that combine thoughtful design with robust engineering.
-              </p>
-              <p className="text-xl text-slate-600 leading-relaxed">
-                We believe in building products that are both beautiful and functional,
-                with a focus on user experience and technical excellence.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* Footer */}
-        <footer className="border-t border-slate-200 py-16 px-6 lg:px-8 bg-white">
-          <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-              <div className="flex items-center gap-3">
-                <Logo size={36} className="text-slate-700" />
-                <span className="font-semibold text-lg text-slate-900">Foresty</span>
+        <footer className="border-t border-slate-200 py-10 px-6 lg:px-8 bg-white">
+          <div className="max-w-3xl mx-auto">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+              <div>
+                <div className="flex items-center gap-3 mb-2">
+                  <Logo size={36} className="text-slate-700" />
+                  <span className="font-semibold text-lg text-slate-900">Foresty</span>
+                </div>
+                <p className="text-sm text-slate-500">
+                  iOS apps — games and tools.
+                </p>
               </div>
               <div className="flex items-center gap-6">
                 <a

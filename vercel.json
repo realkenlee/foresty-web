@@ -3,7 +3,7 @@
   "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/((?!privacy|terms|support|platn|screenshots/|vite\\.svg|assets/).+)",
+      "source": "/((?!privacy|terms|support|platn|screenshots/|vite\\.svg|robots\\.txt|sitemap\\.xml|assets/).+)",
       "destination": "/index"
     }
   ]
