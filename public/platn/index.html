@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    <title>Platn — Pocket typewriter — Foresty</title>
+    <meta
+      name="description"
+      content="Platn is a pocket typewriter for your phone. One sheet. A 15-minute ruler. Local files. Write now. Edit later somewhere else."
+    />
+    <link rel="canonical" href="https://foresty.dev/platn" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <style>
+      :root {
+        --bg: #f6f1e8;
+        --bg-soft: #efe8db;
+        --paper: #fbf7ef;
+        --border: #e4dccb;
+        --text: #1c1814;
+        --muted: #5c5348;
+        --muted-2: #7a7166;
+        --link: #1c1814;
+        --ink: #2a241c;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; }
+      body {
+        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: rgba(246, 241, 232, 0.88);
+        backdrop-filter: saturate(180%) blur(12px);
+        border-bottom: 1px solid var(--border);
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 0;
+        max-width: 1200px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: var(--text);
+      }
+      .brand-name { font-weight: 600; font-size: 1.125rem; }
+      main { padding: 72px 0 104px; }
+      h1 {
+        font-family: ui-serif, Georgia, "Times New Roman", serif;
+        font-size: 2.75rem;
+        font-weight: 600;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        color: var(--ink);
+        margin: 0 0 12px;
+      }
+      .lede {
+        color: var(--muted);
+        font-size: 1.2rem;
+        margin: 0 0 36px;
+      }
+      .sheet {
+        background: var(--paper);
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        padding: 28px 28px 8px;
+        box-shadow: 0 1px 0 rgba(44, 36, 28, 0.04);
+      }
+      .sheet p {
+        color: var(--muted);
+        margin: 0 0 20px;
+      }
+      .store {
+        color: var(--muted-2);
+        font-size: 0.95rem;
+        margin-top: 32px;
+      }
+      a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+      a:hover { opacity: 0.75; }
+      footer {
+        border-top: 1px solid var(--border);
+        padding: 32px 0;
+        color: var(--muted-2);
+        font-size: 0.9rem;
+      }
+      footer .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .logo-dot {
+        width: 28px;
+        height: 28px;
+        border-radius: 6px;
+        background: linear-gradient(135deg, #3d3428, #8a7d6b);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container" style="max-width: 1200px;">
+        <nav class="nav">
+          <a class="brand" href="/">
+            <span class="logo-dot" aria-hidden="true"></span>
+            <span class="brand-name">Foresty</span>
+          </a>
+          <a href="/" style="font-size: 0.95rem;">Back to home</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Platn</h1>
+        <p class="lede">A pocket typewriter for your phone.</p>
+
+        <div class="sheet">
+          <p>One sheet. A 15-minute ruler. Done.</p>
+          <p>No account. No subscription. Local files.</p>
+          <p>Write now. Edit later somewhere else.</p>
+          <p>Support is an optional tip. Nothing unlocks.</p>
+        </div>
+
+        <p class="store">Coming soon on the App Store.</p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div>© 2026 Foresty LLC. All rights reserved.</div>
+        <div>
+          <a href="/platn/privacy" style="margin-right: 16px;">Privacy</a>
+          <a href="/platn/support" style="margin-right: 16px;">Support</a>
+          <a href="/">foresty.dev</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
