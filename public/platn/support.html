@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    <title>Platn Support — Foresty LLC</title>
+    <meta name="description" content="Support for Platn, a local iOS pocket typewriter by Foresty LLC." />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <style>
+      :root {
+        --bg: #ffffff;
+        --bg-soft: #f8fafc;
+        --border: #e2e8f0;
+        --text: #0f172a;
+        --muted: #475569;
+        --muted-2: #64748b;
+        --link: #0f172a;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; }
+      body {
+        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: saturate(180%) blur(12px);
+        border-bottom: 1px solid var(--border);
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 0;
+        max-width: 1200px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: var(--text);
+      }
+      .brand-name { font-weight: 600; font-size: 1.125rem; }
+      main { padding: 64px 0 96px; }
+      h1 {
+        font-size: 2.5rem;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        margin: 0 0 8px;
+      }
+      h2 {
+        font-size: 1.375rem;
+        letter-spacing: -0.01em;
+        margin: 40px 0 12px;
+      }
+      .lede {
+        color: var(--muted-2);
+        font-size: 1.05rem;
+        margin-bottom: 16px;
+      }
+      p, li { color: var(--muted); }
+      a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+      a:hover { opacity: 0.75; }
+      .contact-card {
+        background: var(--bg-soft);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 20px 24px;
+        margin: 24px 0 32px;
+      }
+      .contact-card .email {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 1.05rem;
+        margin-top: 4px;
+      }
+      footer {
+        border-top: 1px solid var(--border);
+        padding: 32px 0;
+        color: var(--muted-2);
+        font-size: 0.9rem;
+      }
+      footer .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .logo-dot {
+        width: 28px;
+        height: 28px;
+        border-radius: 6px;
+        background: linear-gradient(135deg, #334155, #64748b);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container" style="max-width: 1200px;">
+        <nav class="nav">
+          <a class="brand" href="/">
+            <span class="logo-dot" aria-hidden="true"></span>
+            <span class="brand-name">Foresty</span>
+          </a>
+          <a href="/" style="font-size: 0.95rem;">Back to home</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Platn Support</h1>
+        <p class="lede">
+          Platn is a local iOS pocket typewriter. Drafts stay on your device.
+        </p>
+
+        <div class="contact-card">
+          <div>Contact Foresty LLC at</div>
+          <a class="email" href="mailto:hello@foresty.dev">hello@foresty.dev</a>
+          <p style="margin: 12px 0 0;">
+            We typically reply within a few business days.
+          </p>
+        </div>
+
+        <h2>Tips</h2>
+        <p>
+          Platn has an optional Support tip. It is a thank-you only.
+          Nothing unlocks. There is no subscription and no account.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div>© 2026 Foresty LLC. All rights reserved.</div>
+        <div>
+          <a href="/platn/privacy" style="margin-right: 16px;">Privacy</a>
+          <a href="/">foresty.dev</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -3,7 +3,7 @@
   "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/((?!privacy|terms|support|screenshots/|vite\\.svg|assets/).*)",
+      "source": "/((?!privacy|terms|support|platn|screenshots/|vite\\.svg|assets/).*)",
       "destination": "/index.html"
     }
   ]
