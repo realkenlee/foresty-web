@@ -75,25 +75,25 @@ function App() {
                 <h3 className="text-4xl font-bold tracking-tight mb-4 text-slate-900">
                   Line and Stone
                 </h3>
-                <p className="text-lg text-slate-600 max-w-3xl mb-6 leading-relaxed">
-                  A strategic tile-drafting game. Draft materials, fill your blueprint, and outscore your opponents.
-                </p>
-
-                <img
-                  src="/screenshots/menu_screenshot.png"
-                  alt="Line and Stone"
-                  className="w-36 sm:w-40 rounded-xl border border-slate-200 mb-8"
-                />
-
-                <div className="flex flex-wrap items-center gap-4">
-                  <a
-                    href="https://apps.apple.com/us/app/line-and-stone/id6758897625"
-                    className="inline-flex items-center px-6 py-2.5 rounded-full text-sm font-medium bg-slate-900 text-white hover:bg-slate-800 transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    App Store
-                  </a>
+                <div className="flex flex-col sm:flex-row sm:items-start gap-6">
+                  <div className="flex-1 min-w-0">
+                    <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                      A strategic tile-drafting game. Draft materials, fill your blueprint, and outscore your opponents.
+                    </p>
+                    <a
+                      href="https://apps.apple.com/us/app/line-and-stone/id6758897625"
+                      className="inline-flex items-center px-6 py-2.5 rounded-full text-sm font-medium bg-slate-900 text-white hover:bg-slate-800 transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      App Store
+                    </a>
+                  </div>
+                  <img
+                    src="/screenshots/menu_screenshot.png"
+                    alt="Line and Stone"
+                    className="w-28 rounded-xl border border-slate-200 shrink-0"
+                  />
                 </div>
               </article>
             </div>
