@@ -57,10 +57,10 @@ function App() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+            <div className="grid grid-cols-1 gap-8">
               {/* Line and Stone */}
-              <article className="bg-white rounded-2xl border border-slate-200 p-8 lg:p-10 flex flex-col">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 border border-slate-200 mb-6 self-start">
+              <article className="bg-white rounded-2xl border border-slate-200 p-8 lg:p-10">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 border border-slate-200 mb-6">
                   <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                   <span className="text-sm font-medium text-slate-700">Available Now</span>
                 </div>
@@ -68,14 +68,14 @@ function App() {
                 <h3 className="text-4xl font-bold tracking-tight mb-4 text-slate-900">
                   Line and Stone
                 </h3>
-                <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                <p className="text-lg text-slate-600 max-w-3xl mb-8 leading-relaxed">
                   A strategic tile-drafting game where players compete to complete beautiful
                   mosaic patterns. Draft colored materials, fill your blueprint grid, and
                   outscore your opponents.
                 </p>
 
                 {/* Screenshots */}
-                <div className="grid gap-6 mb-8">
+                <div className="grid lg:grid-cols-2 gap-8 mb-8">
                   <div className="group relative">
                     <div className="absolute -inset-1 bg-gradient-to-r from-slate-200 to-slate-300 rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
                     <div className="relative bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
@@ -99,38 +99,38 @@ function App() {
                 </div>
 
                 {/* Features */}
-                <div className="grid gap-4 mb-8">
-                  <div className="group relative bg-white rounded-2xl p-6 border border-slate-200 hover:border-slate-300 transition-all duration-300 hover:shadow-md">
-                    <div className="w-12 h-12 bg-slate-100 rounded-xl mb-4 flex items-center justify-center group-hover:bg-slate-200 transition-colors duration-300">
-                      <svg className="w-6 h-6 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="grid md:grid-cols-3 gap-6 mb-8">
+                  <div className="group relative bg-white rounded-2xl p-8 border border-slate-200 hover:border-slate-300 transition-all duration-300 hover:shadow-md">
+                    <div className="w-14 h-14 bg-slate-100 rounded-xl mb-6 flex items-center justify-center group-hover:bg-slate-200 transition-colors duration-300">
+                      <svg className="w-7 h-7 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                       </svg>
                     </div>
-                    <h4 className="text-lg font-semibold mb-2 text-slate-900">Strategic gameplay</h4>
+                    <h4 className="text-lg font-semibold mb-3 text-slate-900">Strategic gameplay</h4>
                     <p className="text-slate-600 leading-relaxed">
                       Plan your moves carefully to maximize scoring opportunities and complete your mosaic grid.
                     </p>
                   </div>
 
-                  <div className="group relative bg-white rounded-2xl p-6 border border-slate-200 hover:border-slate-300 transition-all duration-300 hover:shadow-md">
-                    <div className="w-12 h-12 bg-slate-100 rounded-xl mb-4 flex items-center justify-center group-hover:bg-slate-200 transition-colors duration-300">
-                      <svg className="w-6 h-6 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <div className="group relative bg-white rounded-2xl p-8 border border-slate-200 hover:border-slate-300 transition-all duration-300 hover:shadow-md">
+                    <div className="w-14 h-14 bg-slate-100 rounded-xl mb-6 flex items-center justify-center group-hover:bg-slate-200 transition-colors duration-300">
+                      <svg className="w-7 h-7 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                       </svg>
                     </div>
-                    <h4 className="text-lg font-semibold mb-2 text-slate-900">Beautiful design</h4>
+                    <h4 className="text-lg font-semibold mb-3 text-slate-900">Beautiful design</h4>
                     <p className="text-slate-600 leading-relaxed">
                       Artisan-inspired visuals with handcrafted aesthetics and multiple theme options.
                     </p>
                   </div>
 
-                  <div className="group relative bg-white rounded-2xl p-6 border border-slate-200 hover:border-slate-300 transition-all duration-300 hover:shadow-md">
-                    <div className="w-12 h-12 bg-slate-100 rounded-xl mb-4 flex items-center justify-center group-hover:bg-slate-200 transition-colors duration-300">
-                      <svg className="w-6 h-6 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <div className="group relative bg-white rounded-2xl p-8 border border-slate-200 hover:border-slate-300 transition-all duration-300 hover:shadow-md">
+                    <div className="w-14 h-14 bg-slate-100 rounded-xl mb-6 flex items-center justify-center group-hover:bg-slate-200 transition-colors duration-300">
+                      <svg className="w-7 h-7 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
                     </div>
-                    <h4 className="text-lg font-semibold mb-2 text-slate-900">AI opponents</h4>
+                    <h4 className="text-lg font-semibold mb-3 text-slate-900">AI opponents</h4>
                     <p className="text-slate-600 leading-relaxed">
                       Challenge yourself against intelligent AI with multiple difficulty levels.
                     </p>
@@ -138,7 +138,7 @@ function App() {
                 </div>
 
                 {/* Platform badges */}
-                <div className="flex items-center gap-4 mt-auto">
+                <div className="flex items-center gap-4">
                   <span className="text-sm font-medium text-slate-600">Available on</span>
                   <div className="flex gap-3">
                     <span className="inline-flex items-center px-6 py-2.5 rounded-full text-sm font-medium bg-slate-900 text-white">
@@ -152,19 +152,20 @@ function App() {
               </article>
 
               {/* Platn */}
-              <article className="bg-white rounded-2xl border border-slate-200 p-8 lg:p-10 flex flex-col">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200 mb-6 self-start">
+              <article className="bg-white rounded-2xl border border-slate-200 p-8 lg:p-10">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200 mb-6">
                   <span className="text-sm font-medium text-slate-600">Coming Soon</span>
                 </div>
 
                 <h3 className="text-4xl font-bold tracking-tight mb-4 text-slate-900">
                   Platn
                 </h3>
-                <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                <p className="text-lg text-slate-600 max-w-3xl mb-8 leading-relaxed">
                   Local pocket typewriter. No account. No sync. No subscription.
                 </p>
 
-                <div className="flex items-center gap-4 mt-auto">
+                <div className="flex items-center gap-4">
+                  <span className="text-sm font-medium text-slate-600">Available on</span>
                   <div className="flex gap-3">
                     <span className="inline-flex items-center px-6 py-2.5 rounded-full text-sm font-medium bg-slate-900 text-white">
                       iOS
