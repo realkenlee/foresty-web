@@ -7,6 +7,11 @@ on:
 
 jobs:
   deploy-production:
+    # Vercel Git already deploys production on push to master.
+    # `vercel deploy --prebuilt` from this workflow 404s `/` when
+    # cleanUrls is enabled: Git served the Foresty SPA, then this
+    # job aliased foresty.dev to NOT_FOUND. Keep production on Git.
+    if: false
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
