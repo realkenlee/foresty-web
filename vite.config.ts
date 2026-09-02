@@ -3,6 +3,7 @@ import { defineConfig, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
 
 const cleanHtmlPaths = new Set(['/platn/support', '/platn/privacy', '/privacy', '/support'])
+const cleanIndexPaths = new Set(['/platn', '/platn/'])
 
 function rewriteCleanHtmlUrl(req: IncomingMessage) {
   const raw = req.url ?? ''
@@ -11,6 +12,10 @@ function rewriteCleanHtmlUrl(req: IncomingMessage) {
   const search = q === -1 ? '' : raw.slice(q)
   if (cleanHtmlPaths.has(pathname)) {
     req.url = `${pathname}.html${search}`
+    return
+  }
+  if (cleanIndexPaths.has(pathname)) {
+    req.url = `/platn/index.html${search}`
   }
 }
 
