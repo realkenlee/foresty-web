@@ -45,7 +45,7 @@ function App() {
               {/* Platn — launch priority */}
               <article className="bg-white rounded-2xl border border-slate-200 p-8 lg:p-10">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200 mb-6">
-                  <span className="text-sm font-medium text-slate-600">Coming Soon</span>
+                  <span className="text-sm font-medium text-slate-600">Available Now</span>
                 </div>
 
                 <h3 className="text-4xl font-bold tracking-tight mb-4 text-slate-900">
@@ -57,12 +57,19 @@ function App() {
 
                 <div className="flex flex-wrap items-center gap-4">
                   <a
-                    href="/platn"
+                    href="https://apps.apple.com/us/app/pocket-typewriter-platn/id6806239617"
                     className="inline-flex items-center px-6 py-2.5 rounded-full text-sm font-medium bg-slate-900 text-white hover:bg-slate-800 transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    App Store
+                  </a>
+                  <a
+                    href="/platn"
+                    className="text-sm text-slate-500 hover:text-slate-700 transition-colors"
                   >
                     Learn more
                   </a>
-                  <span className="text-sm text-slate-500">iOS</span>
                 </div>
               </article>
 
